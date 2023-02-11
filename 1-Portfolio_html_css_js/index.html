@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - HTML_CSS_JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6f1cbc7fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!----------------------Home---------------------->
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <img src="images/logo.png" class="logo">
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#endorsement_references">Endorsement & References</a></li>
+                <li><a href="#portfolio">Portfolio (Projects)</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Vincent</span> Seaw <br>from Malaysia</h1>
+            <br>
+            <h2><span>Personality:</span> Introvert</h2>
+            <h2 id="age"><span>Age:</span> </h2>
+            <h2><span>Highest Education:</span> <br>Bachelor of Science (Honours) <br> In Computer Science</h2>
+        </div>
+    </div>    
+</div>
+
+<!----------------------About---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="subtitle-content">
+                    I am seeking an opportunity to increase knowledge and skills through a full-time position that involves the knowledge of computer science, 
+                    solving real-life problems with the help of coding,
+                    and innovate through experimentation to improve existing system(s) to ensure the system(s)' scalablity, maintainability, performance,  and security. 
+                    <br>
+                    (Expected Salary: RM5,500)
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Language</span><br>Proficient in writing and speaking in English and Malay</li>
+                        <li><span>Microsoft Office Tools</span><br>Competent in using Microsoft Word, Microsoft Excel, and Microsoft PowerPoint</li>
+                        <li><span>Programming Language</span><br>Experienced in high-level programming languages such as Python, Java, and C#</li>
+                        <li><span>Programming Concept</span><br>Experienced in object-oriented programming, and MVC</li>
+                        <li><span>Web Development</span><br>Integrate different systems using restless API</li>
+                        <li><span>PowerBuilder</span><br>Used PowerBuilder to enhance and debug PowerBuilder desktop applications</li>
+                        <li><span>Database</span><br>Experienced in using MSSQL, and ORACLE, prepared enhancement scripts for stored procedures and triggers</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>August 2022 to present</span><br>
+                            Company: JStar Berhad <br>
+                            Job Title: Web Developer (Full-time permanent employee)<br>
+                            Responsiblity: Product integration and tech support <br>
+                            Development Tools: C# ASP.Net MVC framework, razor pages, restless API, MSSQL
+                        </li>
+                        <li><span>May 2021 to July 2022</span><br>
+                            Company: Orisoft Technology Sdn Bhd <br>
+                            Job Title: Junior Software Developer (Full-time permanent employee) <br>
+                            Responsiblity: Frontend and backend maintenance for website and desktop application <br>
+                            Development Tools: C# ASP.Net Web forms, Javascript, JQuery, Json, PowerBuilder 12.0, MSSQL, ORACLE
+                        </li>
+                        <li><span>January 2021 to March 2021</span><br>
+                            Company: QnE Software Sdn Bhd <br>
+                            Job Title: Intern Software Developer (Internship) <br>
+                            Responsiblity: Website maintenance <br>
+                            Development Tools: Angular framework, Node.json, MSSQL, ASP.Net Core, and .NET 5.0 framework
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>March 2018 to March 2021</span><br>
+                            Institution: Sunway University<br>
+                            Degree: Bachelor of Science (Honours) in Computer Science<br>
+                            CGPA: 3.92 
+                        </li>
+                        <li>
+                            <span>March 2017 to March 2018</span><br>
+                            Institution: Sunway College<br>
+                            Foundation: Foundation in Science and Technology (FIST)<br>
+                            CGPA: 3.88
+                        </li>
+                        <li>
+                            <span>January 2012 to December 2016</span><br>
+                            Institution: SMK Seafield<br>
+                            Stream: Pure science<br>
+                            Sijil Pelajaran Malaysia (SPM): 6A, 3B
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------Endorsement/References---------------------->
+<div id="endorsement_references">
+    <div class="container">
+        <h1 class="sub-title">Endorsement & References</h1>
+        <div class="endorsement_references-list">
+            <div>
+                <h2>Jordan Kee (Endorsement)</h2>
+                <h3>University Group Member <br> Contact No: 011-2001 2653</h3>
+                <p>
+                    Everyone is 'hard-working' when they are on the prowl for a job, 
+                    they become perhaps a 'team-player' or 'self-motivated' or even 'natural leader'. 
+                    But for Vincent, this could not be closer to the truth. When you first meet Vincent, you will notice a shy but courteous individual. 
+                    As you start to work with him, his strong work ethic (More buzzwords yes, but I swear to you it's the truth, the whole truth, and nothing but the truth) 
+                    will shine right through. Vincent's cosmic willpower enables him to achieve practically anything. Great as he is as a teammate,
+                    his true potential is when he steps up as a leader. Delegating is easy, getting an entire team of members with different skills and abilities to not only
+                    contribute, but work cohesively as one is a whole other story that comes naturally to Vincent. If you're tired of buzzwords and want the real deal, 
+                    Vincent Seaw is who you are looking for.
+                </p>
+            </div>
+            <div>
+                <h2>Len Wei Xin (Reference)</h2>
+                <h3>University Group Member <br> Contact No: 012-759 7596</h3>
+                <p>
+                    Worked together in multiple group projects
+                </p>
+
+                <br><br>
+
+                <h2>Yohannes Luke Koh (Reference)</h2>
+                <h3>University Group Member <br> Contact No: 014-726 7778</h3>
+                <p>
+                    Worked together in multiple group projects
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------Portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio (Projects)</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/Project_Images/01/Project_background.png">
+                <div class="layer">
+                    <h3>(Final Year Project) <br> Smartphone Biometric System</h3>
+                    <p>
+                        <span>Goal:</span> <br> 
+                        Develop a smartphone-based biometric prototype as the solo developer for Non-Government Organization doctors to identify and keep track their clients.
+                        <br><br>
+                        <span>Challenges:</span> <br> 
+                        1) No prior experience in mobile app development <br> 
+                        2) No prior experience in biometric systems <br> 
+                        3) Little to no supervision 
+                        <br><br>
+                        <span>Outcome:</span> <br> 
+                        Developed an android application prototype with 55% accuracy that needs further improvement.
+                        <br> 
+                        [Grade: 60/100]
+                    </p>
+                    <a href="#portfolio" onclick="toggle('FYP')">Show Demo</a>
+                    <a href="PDF/Projects/01-Smartphone-based Biometric System.pdf" download>Download Thesis Paper</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Project_Images/02/Project_background.png">
+                <div class="layer">
+                    <h3>(SEA Game Jam Competition 2021) <br> Gold Digger</h3>
+                    <p>
+                        <span>Goal:</span> <br> 
+                        Work in a team (Max 5 members) as the lead programmer to develop a game within 48 hours based on the given theme (Treasure)
+                        <br><br>
+                        <span>Challenges:</span> <br> 
+                        1) No prior experience in Unity game engine <br> 
+                        2) Time-constraint, 24 out of the 48 hours is used to develop the game, the remaining time was used for discussion, video-editing, etc. <br> 
+                        3) Unable to use free assets available in Unity, unless is paid or pre-made for other projects.
+                        <br><br>
+                        <span>Outcome:</span> <br> 
+                        Managed to develop a 2D platformer game with a twist of comedy and pleasant BGM that is satisfactory for all members involved in the project. 
+                        <br> 
+                        [Grade: NA]
+                    </p>
+                    <a href="https://www.facebook.com/100000359118533/videos/142081991401565/" target="_blank">Show Demo</a>
+                    <a href="https://dannylen.itch.io/gold-digger" target="_blank">Download Game</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Project_Images/03/Project_background.png">
+                <div class="layer">
+                    <h3>(University Notable Group Project) <br> Tetris Game Distributed System</h3>
+                    <p>
+                        <span>Goal:</span> <br> 
+                        Work in a team (Max 5 members) as the group leader to develop a distrbuted system (A system where data can be passed to another node across LAN
+                        or the internet)
+                        <br><br>
+                        <span>Challenges:</span> <br> 
+                        1) No prior experience in development using Akka framework <br> 
+                        2) Need to modify and integrate previously created Tetris game code into a Akka framework distributed system <br> 
+                        3) No prior experience regarding systems communication across the internet or LAN
+                        <br><br>
+                        <span>Outcome:</span> <br> 
+                        Developed a 1v1 Tetris game that can be played across the internet.
+                        <br> 
+                        [Grade: 30/30]
+                    </p>
+                    <a href="#portfolio" onclick="toggle('UniNGP')">Show Demo</a>
+                    <a href="PDF/Projects/03-Tetris(Marked).pdf" download>Download Marked Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------Videos---------------------->
+
+<div id="FYP" class="videoContainer">
+    <video id="FYP_video" src="videos/01-FYP_Biometric_Smartphone_Demo.mp4" controls="true"></video>
+    <img src="images/close.png" class="close" onclick="toggle('FYP')">
+</div>
+
+<div id="UniNGP" class="videoContainer">
+    <video id="UniNGP_video" src="videos/03-VS_ClientInternetPart2.mp4" controls="true"></video>
+    <img src="images/close.png" class="close" onclick="toggle('UniNGP')">
+</div>
+
+
+<!----------------------Contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vinseaw@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+60 18-366 8161</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vincent-seaw-14a60b1b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="PDF/Contact_Me/Resume(Vincent_Seaw).pdf" download class="btn">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Followed Tutorial done by "Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials" with a few tweaks based on my personal taste</p>
+    </div>
+</div>
+
+
+<!----------------------Script---------------------->
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname)
+    {
+        for(tabLink of tabLinks)
+        {
+            tabLink.classList.remove("active-link");
+        }
+
+        for(tabContent of tabContents)
+        {
+            tabContent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function toggle(divID)
+    {
+        var videoContainer = document.getElementById(divID);
+
+        var videoID = divID + "_video"
+        var video = document.getElementById(videoID);
+
+        videoContainer.classList.toggle("active")
+        video.pause();
+        video.currentTime = 0;
+    }
+
+    function getAge(dob)
+    {
+        var diff_ms = Date.now() - dob.getTime();
+        var age_dt = new Date(diff_ms);  
+        var age = Math.abs(age_dt.getUTCFullYear() - 1970 + 1);
+        document.getElementById("age").innerHTML = "<span>Age:</span> " + age;
+    }
+
+    window.onload = function() {
+        getAge(new Date(1999, 2, 20));
+    };
+
+</script>
+
+<script>
+
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu()
+    {
+        sideMenu.style.left = "0";
+    }
+
+    function closeMenu()
+    {
+        sideMenu.style.left = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
