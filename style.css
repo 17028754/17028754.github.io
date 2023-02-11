@@ -10,14 +10,14 @@ html{
 }
 
 body{
-    background: #080808;
+    /* background: #080808; */
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     color: #fff;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -194,7 +194,7 @@ nav ul li a:hover::after{
 }
 
 .endorsement_references-list div{
-    background: #262626;
+    background: #181818;
     padding: 40px;
     font-size: 16px;
     font-weight: 300;
@@ -413,9 +413,6 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/phone-background.png);
-    }
 
     .header-text{
         margin-top: 25%;
