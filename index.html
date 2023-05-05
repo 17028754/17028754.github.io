@@ -301,16 +301,28 @@
         video.currentTime = 0;
     }
 
-    function getAge(dob)
+    // function getAge(dob)
+    // {
+    //     var diff_ms = Date.now() - dob.getTime();
+    //     var age_dt = new Date(diff_ms);  
+    //     var age = Math.abs(age_dt.getUTCFullYear() - 1970);
+    //     document.getElementById("age").innerHTML = "<span>Age:</span> " + age;
+    // }
+
+    // window.onload = function() {
+    //     getAge(new Date(1999, 2, 20));
+    // };
+
+    function getAge(BirthYear)
     {
-        var diff_ms = Date.now() - dob.getTime();
-        var age_dt = new Date(diff_ms);  
-        var age = Math.abs(age_dt.getUTCFullYear() - 1970 + 1);
+        const currentYear = new Date();
+        var age = currentYear.getFullYear() - BirthYear;
+   
         document.getElementById("age").innerHTML = "<span>Age:</span> " + age;
     }
 
     window.onload = function() {
-        getAge(new Date(1999, 2, 20));
+        getAge(1999);
     };
 
 </script>

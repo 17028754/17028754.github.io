@@ -10,10 +10,10 @@ html{
 }
 
 body{
-    /* background: #080808; */
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     color: #fff;
 }
+
 
 #header{
     width: 100%;
@@ -257,10 +257,10 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: unset;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
