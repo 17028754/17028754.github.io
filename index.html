@@ -10,6 +10,11 @@
 </head>
 <body>
 
+<!----------------------Splash---------------------->
+<div class="splash">
+    <h1 class="fade-in">Welcome to My Website</h1>
+</div>
+
 <!----------------------Home---------------------->
     
 <div id="header">
@@ -269,9 +274,16 @@
 
 <!----------------------Script---------------------->
 <script>
-
+    
+    const splash = document.querySelector('.splash');
     var tabLinks = document.getElementsByClassName("tab-links");
     var tabContents = document.getElementsByClassName("tab-contents");
+
+    document.addEventListener('DOMContentLoaded', (e) => {
+        setTimeout(() => {
+            splash.classList.add('display-none');
+        }, 2000);
+    })
 
     function openTab(tabname)
     {
