@@ -19,8 +19,8 @@
     
 <div id="header">
     <div class="container">
-        <nav>
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        <nav class="navbar">
+            <i style="margin-left: 20px;" class="fa-solid fa-bars" onclick="openMenu()"></i>
             <img src="images/logo.png" class="logo">
             <ul id="sideMenu">
                 <li><a href="#header">Home</a></li>
@@ -278,6 +278,7 @@
     const splash = document.querySelector('.splash');
     var tabLinks = document.getElementsByClassName("tab-links");
     var tabContents = document.getElementsByClassName("tab-contents");
+    var sideMenu = document.getElementById("sideMenu");
 
     document.addEventListener('DOMContentLoaded', (e) => {
         setTimeout(() => {
@@ -333,16 +334,6 @@
         document.getElementById("age").innerHTML = "<span>Age:</span> " + age;
     }
 
-    window.onload = function() {
-        getAge(1999);
-    };
-
-</script>
-
-<script>
-
-    var sideMenu = document.getElementById("sideMenu");
-
     function openMenu()
     {
         sideMenu.style.left = "0";
@@ -353,7 +344,13 @@
         sideMenu.style.left = "-200px";
     }
 
+
+    window.onload = function() {
+        getAge(1999);
+    };
+
 </script>
+
 
 </body>
 </html>
